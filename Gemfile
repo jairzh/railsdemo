@@ -22,6 +22,10 @@ end
 
 gem 'jquery-rails'
 
+# Use databasedotcom for Salesforce
+gem 'databasedotcom'
+gem 'databasedotcom-rails'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

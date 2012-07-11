@@ -37,6 +37,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
+    databasedotcom (1.3.1)
+      json
+      multipart-post (~> 1.1)
+    databasedotcom-rails (1.1.0)
+      databasedotcom
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -53,6 +58,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.3.6)
+    multipart-post (1.1.5)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -104,6 +110,8 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  databasedotcom
+  databasedotcom-rails
   jquery-rails
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)

@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  include Databasedotcom::Rails::Controller
   # GET /users
   # GET /users.json
   def index

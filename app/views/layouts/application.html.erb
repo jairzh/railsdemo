@@ -2,9 +2,8 @@
 <html>
   <head>
     <title>Pragprog Books Online Store</title>
-    <%= stylesheet_link_tag "scaffold" %>
-    <%= stylesheet_link_tag "depot", :media => "all" %> 
-    <%= javascript_include_tag :defaults %>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
     <%= csrf_meta_tag %>
   </head>
   <body id="store" > 
@@ -19,13 +18,13 @@
         <a href="http://www..../news">News</a><br />
         <a href="http://www..../contact">Contact</a><br />
       </div>
-      <div>
+      <!--<div>
         <audio controls="controls">
           <source src="<%= audio_path("1.mp3") %>" type="audio/mpeg" />
                     Your browser does not support the audio element.
         </audio>
         <%= audio_tag("1.mp3") %>
-      </div>
+      </div>-->
       <div id="main">
         <%= yield %>
       </div>

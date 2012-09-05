@@ -3,6 +3,7 @@ class Product < ActiveRecord::Base
 
   #data relationship
   has_many :line_items
+  has_many :orders, :through => :line_items
   before_destroy :ensure_not_referenced_by_any_line_item
 
   private
@@ -24,4 +25,5 @@ class Product < ActiveRecord::Base
     :with    => %r{\.(gif|jpg|png)$}i,
     :message => 'must be a URL for GIF, JPG or PNG image.'
   }
+
 end
